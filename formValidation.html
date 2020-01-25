@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>form validation</title>
+        <link rel="stylesheet" href="formValidation.css">
+    </head>
+    <body>
+        <div class="container">
+        <form oninput="res.value='$'+Salary.value">
+            <label>Name   </label>
+           <input type="text" name="Name" placeholder="Your name.." required ><br><br>
+            <label>Email</label>
+            <input type="email" name="Email" placeholder="Your email.."required><br><br>
+            <label>Password</label>
+            <input type="password"  minlength="8" name="password" required><br><br>
+            <label>Salary</label>
+            <input type="range" min="10" max="200" name="Salary" oninput="res.value = name.value" required>
+            <output name='res' ></output><br><br>
+            <label>Age</label>
+            <input type="number"  name="Age" min="21" required><br><br>
+            <div class="row">
+                <input type="submit" value="Submit" required>
+              </div><br><br><br>
+              </div>
+
+        </form>
+    </div>
+    </body>
+</html>
